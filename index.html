@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link  rel="icon" href="Assets/mantenimiento.png" type="image/png" />
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
     <title>Talleres Lastras</title>
 </head>
 <body>
@@ -55,64 +56,74 @@
     </section>
     <section id="services">
         <h2>Todos los servicios en un único lugar</h2>
-        <div>Cambio de Aceite</div>
-        <div>Frenos / Pastillas</div>
-        <div>Pre-ITV</div>
-        <div>Neumáticos</div>
-        <div>Baterías</div>
-        <div>Diagnóstico</div>
-        <div>Caja de cambios</div>
-        <div>Motor</div>
-        <div>Dirección</div>
-        <div>Escape</div>
+        <div id="services-list">
+            <div class="services-items"><img src="./Assets/repair14.jpg" alt="Cambio de Aceite"><p>Cambio de Aceite</p></div>
+            <div class="services-items"><img src="./Assets/repair12.jpg" alt="Frenos / Pastillas"><p>Frenos / Pastillas</p></div>
+            <div class="services-items"><img src="./Assets/repair7.jpg" alt="Pre-ITV"><p>Pre-ITV</p></div>
+            <div class="services-items"><img src="./Assets/repair9.jpg" alt="Neumáticos"><p>Neumáticos</p></div>
+            <div class="services-items"><img src="./Assets/repair3.jpg" alt="Baterías"><p>Baterías</p></div>
+            <div class="services-items"><img src="./Assets/repair5.jpg" alt="Diagnóstico"><p>Diagnóstico</p></div>
+            <div class="services-items"><img src="./Assets/repair6.jpg" alt="Caja de cambios"><p>Caja de cambios</p></div>
+            <div class="services-items"><img src="./Assets/repair13.jpg" alt="Motor"><p>Motor</p></div>
+            <div class="services-items"><img src="./Assets/repair4.jpg" alt="Dirección"><p>Dirección</p></div>
+            <div class="services-items"><img src="./Assets/repair11.jpg" alt="Escape"><p>Escape</p></div>
+        </div>
     </section>
     <section id="numbers">
         <div>
-            <h5>493</h5>
+            <h5 id="number-hybrid">493</h5>
             <p>Eléctricos / Híbridos reparados</p>
         </div>
         <div>
-            <h5>6491</h5>
+            <h5 id="number-cars">6491</h5>
             <p>Vehículos reparados</p></div>
         <div>
-            <h5>34</h5>
+            <h5 id="number-exp">0</h5>
             <p>Años de experiencia</p></div>
     </section>
     <section id="insurance">
-        <div>TRABAJAMOS CON TODAS LAS ASEGURADORAS</div>
+        <div><h2>TRABAJAMOS CON TODAS LAS ASEGURADORAS</h2></div>
         <a href="#">CONTACTAR</a>
     </section>
     <section id="brands">
         <h3>Siempre primeras Marcas</h3>
         <p>En Talleres Lastras únicamente confíamos en primeras marcas por su durabilidad e ingeniería probada.</p>
-        <div>foto</div>
+        <img src="./Assets/marcas-taller.png" alt="primeras marcas">
     </section>
     <section id="cleaning">
-        <div>LIMPIEZA TOTAL DE TAPICERÍAS</div>
+        <div><h2>LIMPIEZA TOTAL DE TAPICERÍAS</h2></div>
     </section>
     <section id="car-renting">
         <h3>Coche de Sustitución</h3>
         <p>Tenemos diferentes tipos de vehículo para que tu negocio nunca pare. Consúltanos.</p>
     </section>
+    <hr class="footer">
     <section id="contact-details">
-        <div>
+        <div id="contact-data">
             <h3>¿Hablamos?</h3>
             <p>913 41 87 97</p>
-            <p>Dirección
-                C/ Puerto de San Glorio, 17
-                28919 Leganés
-                
-                Email
-                info@tallereslastras.com
-                
-                Horario
-                De Lunes a Viernes,
-                
-                De 8:30 a 18:00hrs
-                
+            <span class="data-title">Dirección</span><br>
+            <p>C/ Puerto de San Glorio, 17<br>
+                28919 Leganés<br></p>
+                <span class="data-title">Email</span><br>
+                <p>info@tallereslastras.com<br></p>
+                <span class="data-title">Horario</span><br>
+                <p>De Lunes a Viernes,<br>
+                De 8:30 a 18:00hrs<br>                
                 Ininterrumpidamente</p>
         </div>
-        <div id="contact-form">Contáctanos</div>
+        <div id="contact-form">
+            <h3>Contáctanos</h3>
+        </div>
     </section>
+    <section id="shapes-contact-triangle">
+        <div class="triangle" id="triangle-3"></div>
+        <div class="triangle" id="triangle-4"></div>
+    </section>
+    <div id="go-up-button">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <script src="./script.js"></script>
+    <hr class="end-page">
 </body>
 </html>
