@@ -1,7 +1,7 @@
 :root {
     font-family: 'Orbitron', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Racing Sans One', sans-serif;
+    font-family: 'Teko', sans-serif;
 }
 
 * {
@@ -30,15 +30,32 @@ h5, p, a {
 
 #main-header img {
     position: absolute;
-    max-width: 300px;
+    max-width: 27vw;
     right: 1%;
     top: 0;
+}
+
+#main-header a {
+    position: relative;
+    color: #ffff;
+    padding: 20px;
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    margin: 0 auto;
+    left: 38.8%;
+    top: 40px;
+}
+
+#main-header a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 4px #ffff;
 }
 
 #main-arrow {
     position: absolute;
     height: 150px;
-    bottom: 12%;
+    bottom: 22%;
+    left: -7px;
 }
 
 #arrowAnim {
@@ -53,7 +70,7 @@ h5, p, a {
   .arrow {
     width: 5vw;
     height: 5vw;
-    border: 2.5vw solid;
+    border: 1.5vw solid;
     border-color: white transparent transparent white;
     transform: rotate(-45deg);
   }
@@ -134,7 +151,6 @@ h5, p, a {
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    background-color: grey;
 }
 
 #call-to-action div {
@@ -143,12 +159,31 @@ h5, p, a {
     font-family: 'Roboto';
     font-size: 2.4rem;
     color: #ffff;
-    max-width: 50vw;
 }
 
-#call-to-action div h3, a {
+#CTA-1 {
+    background-color: #2a3039;
+    width: 50%;
+}
+
+#CTA-2 {
+    background-color: #20252c;
+    width: 50%;
+}
+
+#CTA-1 img {
+    width: 150px;
+    padding: 10px 5px 25px;
+}
+
+#CTA-2 img {
+    width: 100px;
+    padding: 5px;
+}
+
+#call-to-action div h3 {
     font-family: 'Orbitron';
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     font-weight: bold;
     color: #ffff;
     padding: 10px 0;
@@ -157,6 +192,24 @@ h5, p, a {
 #call-to-action div p {
     padding: 20px;
     line-height: 3rem;
+}
+
+#call-to-action div a {
+    position: absolute;
+    transform: translate(-50%, 80%);
+    font-family: 'Orbitron';
+    font-size: 2.7rem;
+    color: #d51a27;
+    background-color: #ffff;
+    padding: 10px 25px;
+    box-shadow: 5px 5px 5px #d51a27;
+}
+
+#call-to-action div a:hover {
+    transform: translate(-50%, 75%);
+    padding: 12px 27.5px;
+    text-decoration: underline;
+    text-shadow: 0 0 .5px #d51a27;
 }
 
 #shapes-triangle {
@@ -174,12 +227,12 @@ h5, p, a {
 
 #shapes-triangle #triangle-1 {
     border-left: 34.5vw solid transparent;
-    border-top: 50px solid grey;
+    border-top: 50px solid #2a3039;
 }
 
 #shapes-triangle #triangle-2 {
     border-right: 34.5vw solid transparent;
-    border-top: 50px solid grey;
+    border-top: 50px solid #20252c;
 }
 
 #services h2, h2 {
@@ -187,15 +240,25 @@ h5, p, a {
     font-size: 7rem;
     padding: 100px 0 150px;
     text-align: center;
-    max-width: 70%;
+    max-width: 50%;
     margin: 0 auto;
+}
+
+#services-bg {
+    width: 100%;
+    background: linear-gradient( rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.7) 100%), url('./Assets/car-dealer-05.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 250px;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 7vw),50% 100%,0 calc(100% - 7vw));
 }
 
 #services-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -210,6 +273,14 @@ h5, p, a {
     padding: 20px 0;
     font-family: 'Roboto';
     font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.divisor {
+    width: 100%;
+    background-color: #ffff;
+    clip-path: polygon(0 0,50% 7vw,100% 0,100% 100%,0 100%);
+    margin-top: calc(0px - 7vw);
 }
 
 #numbers {
@@ -219,23 +290,77 @@ h5, p, a {
     width: 60%;
     margin: 0 auto;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 0 200px;
     font-family: 'Roboto';
     font-size: 5.5rem;
 }
 
 #numbers h5 {
-    color: red;
+    color: #d51a27;
     font-size: 7rem;
 }
 
+#insurance {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(27,31,37,0.3) 0%,#1b1f25 100%), url('./Assets/car-dealer-26.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+    clip-path: polygon(0 0,50% 7vw,100% 0,100% 100%,0 100%);
+    margin-top: calc(0px - 7vw);
+}
 
+#insurance h2 {
+    position: relative;
+    font-family: 'Teko';
+    font-size: 12rem;
+    color: #ffff;
+    line-height: 25rem;
+    margin: -200px auto;
+}
 
+.transparent-title {
+    position: absolute;
+    text-align: center;
+    font-family: 'Teko';
+    font-size: 40rem;
+    color: #ffff;
+    opacity: 0.2;
+    text-shadow: 0 0 8px #ffff;
+    left: -40px;
+    top: 400px;
+    transform:scaleY(2);
+}
 
+#insurance a {
+    position: absolute;
+    color: #ffff;
+    left: 45%;
+    text-align: center;
+    margin-top: 25px;
+    background-color: #d51a27;
+    font-weight: bold;
+    padding: 20px 40px;
+    font-family: 'Orbitron';
+    font-size: 1.5rem;
+}
+
+#insurance a:hover:after {
+    content: " \21D3";
+    text-shadow: 0 0 4px #ffff;
+}
+
+#insurance a:hover {
+    text-shadow: 0 0 4px #ffff;
+    transform: translate(-5%);
+}
 
 #brands {
     width: 70%;
     margin: 0 auto;
+    padding-bottom: 200px;
 }
 
 #brands p, #car-renting p {
@@ -255,10 +380,67 @@ h5, p, a {
     margin: 0 auto;
 }
 
+#cleaning {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(27,31,37,0.3) 0%,#1b1f25 100%), url('./Assets/wash-the-car-carpet-detailing-on-interior-of-modern-car-clean-by-using-brush-and-cleaning-solution-on-the-car-carpet-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+    clip-path: polygon(0 0,50% 7vw,100% 0,100% 100%,0 100%);
+    margin-top: calc(0px - 7vw);
+}
+
+#cleaning h2 {
+    position: relative;
+    font-family: 'Teko';
+    font-size: 12rem;
+    color: #ffff;
+    line-height: 25rem;
+    margin: -200px auto;
+}
+
+#cleaning .transparent-title {
+    left: -10px;
+}
+
+#car-renting {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: #ffff;
+    clip-path: polygon(0 0,50% 7vw,100% 0,100% 100%,0 100%);
+    margin-top: calc(0px - 7vw);
+}
+
+#choices {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#car-renting img {
+    width: 25%;
+    border-radius: 5%;
+    -webkit-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+}
+
+#logo-garage {
+    background-image: url('./Assets/unnamed.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+}
+
 .footer {
     width: 100%;
     border: 0px solid transparent;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 #contact-details {
@@ -266,57 +448,134 @@ h5, p, a {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    background-color: grey;
     text-align: center;
 }
 
-#contact-details div {
-    padding: 5% 2% 2.5%;
-    text-align: center;
+#contact-data {
+    width: 50%;
+    height: 600px;
+    transform: translateY(10%);
+    background: linear-gradient(rgba(193, 15, 27, 0.3) 0%,rgba(193, 15, 27, 0.3) 100%), url('./Assets/unnamed-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #c10f1b;
+    margin-bottom: 50px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+
+#contact-data h3, .info {
+    margin-top: -50px;
+}
+
+#contact-form {
+    width: 50%;
+    background-color: #c10f1b;
+    margin: 0 auto;
+}
+
+#contact-form h3 {
+    margin-top: 10px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form input:not(#button),
+#form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    outline: 1;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+    outline-color: #d63031;
     font-family: 'Roboto';
-    font-size: 2.4rem;
-    color: #ffff;
+    font-size: 1rem;
+    resize: none;
 }
 
-#contact-details div h3, a, #contact-form h3 {
+#form textarea:hover, 
+#form input:not(#button):hover,
+#form textarea:focus,
+#form input:not(#button):focus {
+    background-color: #d63031;
+}
+
+#form input::placeholder {
+    color: #fff;
+}
+
+#button {
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d63031;
     font-family: 'Orbitron';
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #ffff;
     padding: 10px 0;
 }
 
-#contact-details div p {
+#button:hover {
+    text-shadow: 0 0 4px #ffff;
+    background-color: #d63031;
+}
+
+#contact-details div {
+    padding: 5% 2% 2.5%;
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    color: #ffff;
+}
+
+#contact-data h3, #contact-form h3 {
+    font-family: 'Orbitron';
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #ffff;
+    padding: 10px 0;
+}
+
+#contact-data p {
     padding: 20px;
+    line-height: 3rem;
+}
+
+#phone {
+    text-decoration: underline;
+    font-family: 'Orbitron';
+    font-size: 4.7rem;
+    font-weight: bold;
+    color: #ffff;
+    padding: 30px 0 0;
+}
+
+.timetable p {
+    font-size: 2.6rem;
     line-height: 3rem;
 }
 
 .data-title {
     font-weight: bold;
     text-decoration: underline;
-}
-
-#shapes-contact-triangle {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-#shapes-contact-triangle .triangle {
-    width: 0;
-    height: 0;
-}
-
-#shapes-contact-triangle #triangle-3 {
-    border-left: 49.5vw solid transparent;
-    border-top: 50px solid grey;
-}
-
-#shapes-contact-triangle #triangle-4 {
-    border-right: 49.5vw solid transparent;
-    border-top: 50px solid grey;
 }
 
 #go-up-button {
@@ -337,6 +596,8 @@ h5, p, a {
 
 .end-page {
     width: 100%;
-    padding: 20px;
-    border: 0 solid transparent;
+    height: 150px;
+    background-color: #ffff;
+    clip-path: polygon(0 0,50% 7vw,100% 0,100% 100%,0 100%);
+    margin-top: calc(0px - 7vw);
 }

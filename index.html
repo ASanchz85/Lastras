@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Teko:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link  rel="icon" href="Assets/mantenimiento.png" type="image/png" />
     <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
@@ -15,6 +15,11 @@
 <body>
     <section id="main-header">
         <img src="./Assets/unnamed__3_-black-removebg-preview.png" alt="company logo">
+        <nav>
+            <a href="#services">Servicios</a>
+            <a href="#contact-details">Contacto</a>
+            <a href="http://www.tallereslastras.com/acceso/">Acceso</a>
+        </nav>
         <div id="main-slogan">
             <h3>APLICAMOS TECNOLOGÍA Y EXPERIENCIA</h3>
             <h1>TU COCHE NOS PREFIERE…</h1>
@@ -40,11 +45,13 @@
     </section>
     <section id="call-to-action">
         <div id="CTA-1">
+            <img src="./Assets/logo_talleres_blanco.png" alt="COBERTURA NACIONAL">
             <h3>COBERTURA NACIONAL</h3>
             <p>Como miembros de la red de talleres CGA, ofrecemos garantía con cobertura en España y Portugal de la pieza sustituida durante la reparación. La red cuenta con más de 1.000 talleres donde se cumple con un elevado estándar de calidad. Más de 30 años nos avalan.</p>
             <a href="#">SABER MÁS</a>
         </div>
         <div id="CTA-2">
+            <img src="./Assets/garantia-removebg-preview.png" alt="SIN PERDER LA GARANTÍA">
             <h3>SIN PERDER LA GARANTÍA</h3>
             <p>Puedes realizar con nosotros el mantenimiento de tu coche nuevo sin temor a perder la garantía oficial de la marca. Diagnósis, dirección, frenos, suspensión, neumáticos … todo lo que necesites, sin riesgos y con plenas garantías. Estamos certificados para la reparación de coches eléctricos e híbridos.</p>
             <a href="#">PEDIR CITA</a>
@@ -56,34 +63,37 @@
     </section>
     <section id="services">
         <h2>Todos los servicios en un único lugar</h2>
-        <div id="services-list">
-            <div class="services-items"><img src="./Assets/repair14.jpg" alt="Cambio de Aceite"><p>Cambio de Aceite</p></div>
-            <div class="services-items"><img src="./Assets/repair12.jpg" alt="Frenos / Pastillas"><p>Frenos / Pastillas</p></div>
-            <div class="services-items"><img src="./Assets/repair7.jpg" alt="Pre-ITV"><p>Pre-ITV</p></div>
-            <div class="services-items"><img src="./Assets/repair9.jpg" alt="Neumáticos"><p>Neumáticos</p></div>
-            <div class="services-items"><img src="./Assets/repair3.jpg" alt="Baterías"><p>Baterías</p></div>
-            <div class="services-items"><img src="./Assets/repair5.jpg" alt="Diagnóstico"><p>Diagnóstico</p></div>
-            <div class="services-items"><img src="./Assets/repair6.jpg" alt="Caja de cambios"><p>Caja de cambios</p></div>
-            <div class="services-items"><img src="./Assets/repair13.jpg" alt="Motor"><p>Motor</p></div>
-            <div class="services-items"><img src="./Assets/repair4.jpg" alt="Dirección"><p>Dirección</p></div>
-            <div class="services-items"><img src="./Assets/repair11.jpg" alt="Escape"><p>Escape</p></div>
+        <div id="services-bg">
+            <div id="services-list">
+                <div class="services-items"><img src="./Assets/repair14.jpg" alt="Cambio de Aceite"><p>Cambio de Aceite</p></div>
+                <div class="services-items"><img src="./Assets/repair12.jpg" alt="Frenos / Pastillas"><p>Frenos / Pastillas</p></div>
+                <div class="services-items"><img src="./Assets/repair7.jpg" alt="Pre-ITV"><p>Pre-ITV</p></div>
+                <div class="services-items"><img src="./Assets/repair9.jpg" alt="Neumáticos"><p>Neumáticos</p></div>
+                <div class="services-items"><img src="./Assets/repair3.jpg" alt="Baterías"><p>Baterías</p></div>
+                <div class="services-items"><img src="./Assets/repair5.jpg" alt="Diagnóstico"><p>Diagnóstico</p></div>
+                <div class="services-items"><img src="./Assets/repair6.jpg" alt="Caja de cambios"><p>Caja de cambios</p></div>
+                <div class="services-items"><img src="./Assets/repair13.jpg" alt="Motor"><p>Motor</p></div>
+                <div class="services-items"><img src="./Assets/repair4.jpg" alt="Dirección"><p>Dirección</p></div>
+                <div class="services-items"><img src="./Assets/repair11.jpg" alt="Escape"><p>Escape</p></div>
+            </div>
+            <div class="divisor"></div>
         </div>
     </section>
     <section id="numbers">
         <div>
-            <h5 id="number-hybrid">493</h5>
-            <p>Eléctricos / Híbridos reparados</p>
+            <h5 id="number-hybrid">0</h5>
+            <p>Eléctricos /<br>Híbridos reparados</p>
         </div>
         <div>
-            <h5 id="number-cars">6491</h5>
+            <h5 id="number-cars">0</h5>
             <p>Vehículos reparados</p></div>
         <div>
             <h5 id="number-exp">0</h5>
             <p>Años de experiencia</p></div>
     </section>
     <section id="insurance">
-        <div><h2>TRABAJAMOS CON TODAS LAS ASEGURADORAS</h2></div>
-        <a href="#">CONTACTAR</a>
+        <div><h2>TRABAJAMOS CON<br><span class="transparent-title">TODAS</span><br>LAS ASEGURADORAS</h2></div>
+        <a href="#contact-form">CONTACTAR</a>
     </section>
     <section id="brands">
         <h3>Siempre primeras Marcas</h3>
@@ -91,39 +101,48 @@
         <img src="./Assets/marcas-taller.png" alt="primeras marcas">
     </section>
     <section id="cleaning">
-        <div><h2>LIMPIEZA TOTAL DE TAPICERÍAS</h2></div>
+        <div><h2>LIMPIEZA<br><span class="transparent-title">TOTAL</span><br>DE TAPICERÍAS</h2></div>
     </section>
     <section id="car-renting">
         <h3>Coche de Sustitución</h3>
         <p>Tenemos diferentes tipos de vehículo para que tu negocio nunca pare. Consúltanos.</p>
+        <d id="choices">
+            <img src="./Assets/Talleres-Lastras-sustitución3-1536x1152-1.jpg" alt="Vehículo sustitución para particulares">
+            <div id="logo-garage"></div>
+            </div><img src="./Assets/Talleres-Lastras-sustitución1-1536x1152-1.jpg" alt="Vehículo sustitución para profesionales">
+        </div>
     </section>
     <hr class="footer">
     <section id="contact-details">
         <div id="contact-data">
             <h3>¿Hablamos?</h3>
-            <p>913 41 87 97</p>
+            <a href="tel:+34913418797" id="phone">913 41 87 97</a>
+            <div class="info"><div class="adress">
             <span class="data-title">Dirección</span><br>
             <p>C/ Puerto de San Glorio, 17<br>
                 28919 Leganés<br></p>
                 <span class="data-title">Email</span><br>
-                <p>info@tallereslastras.com<br></p>
-                <span class="data-title">Horario</span><br>
+                <p>info@tallereslastras.com<br></p></div>
+                <div class="timetable"><span class="data-title">Horario</span><br>
                 <p>De Lunes a Viernes,<br>
                 De 8:30 a 18:00hrs<br>                
-                Ininterrumpidamente</p>
+                Ininterrumpidamente</p></div></div>
         </div>
         <div id="contact-form">
             <h3>Contáctanos</h3>
+            <form id="form" action="https://formsubmit.co/asanchz85@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Nombre">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" cols="30" rows="15">Me gustaría información sobre...</textarea>
+                <input id="button" type="submit" value="Enviar">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500//">
+            </form>
         </div>
     </section>
-    <section id="shapes-contact-triangle">
-        <div class="triangle" id="triangle-3"></div>
-        <div class="triangle" id="triangle-4"></div>
-    </section>
+    <div class="end-page"></div>
     <div id="go-up-button">
         <i class="fas fa-angle-up"></i>
     </div>
     <script src="./script.js"></script>
-    <hr class="end-page">
 </body>
 </html>

@@ -44,7 +44,7 @@ window.addEventListener("scroll",function(){
     }
 });
 
-let video = document.getElementsByTagName("video-header")[0];
+let video = document.getElementsById("video-header");
 window.addEventListener("scroll", function(){
     if (this.scrollY >= (video.offsetTop - document.documentElement.clientHeight))
         video.play();
