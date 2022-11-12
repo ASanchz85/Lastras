@@ -637,6 +637,11 @@ nav a {
     width: 50%;
 }
 
+.adress a {
+    text-decoration: underline;
+    color: #ffff;
+}
+
 #phone {
     text-decoration: underline;
     font-family: 'Orbitron';
@@ -645,11 +650,6 @@ nav a {
     color: #ffff;
     padding: 30px 0;
 }
-/* 
-.timetable p {
-    font-size: 2.6rem;
-    line-height: 3rem;
-} */
 
 .data-title {
     font-weight: bold;
