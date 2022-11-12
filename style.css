@@ -465,7 +465,7 @@ nav a {
     font-size: 12rem;
     color: #ffff;
     line-height: 25rem;
-    margin: -100px auto;
+    margin: -220px auto;
 }
 
 #cleaning .transparent-title {
@@ -532,9 +532,9 @@ nav a {
 
 .info {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
 
 #contact-data h3, .info {
@@ -628,8 +628,13 @@ nav a {
 
 .info {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.adress, .timetable {
+    width: 50%;
 }
 
 #phone {
