@@ -642,6 +642,10 @@ nav a {
     color: #ffff;
 }
 
+.adress a:visited {
+    color: #ffff;
+}
+
 #phone {
     text-decoration: underline;
     font-family: 'Orbitron';
